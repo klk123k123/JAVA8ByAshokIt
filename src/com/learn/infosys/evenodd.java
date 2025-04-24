@@ -10,14 +10,14 @@ public class evenodd {
 		// TODO Auto-generated method stub
 		
 		List<Integer>list=Arrays.asList(1,2,3,4,5,6,7,8,9);
-		List<Integer>evenList=list.stream().filter(i->i%2==0).collect(Collectors.toList());
+		List<Integer>evenList=list.stream().filter(i->i%2==0).collect(Collectors.toList());//introduced java 8
 		System.out.println(evenList);
 		List<Integer>oddList=list.stream().filter(i->i%2!=0).collect(Collectors.toList());
 		System.out.println(oddList);
 		//other way analysis
 		List<Integer> list1=Arrays.asList(1,2,3,4,5,6,7,8,9);
 		List<Integer>listOdd=list.stream().filter(i->i%2!=0).collect(Collectors.toList());
-		List<Integer>listOdd1=list.stream().filter(i->i%2!=0).toList();
+		List<Integer>listOdd1=list.stream().filter(i->i%2!=0).toList();//introduced on java 16
 		//List<Integer>listOdd2=list.stream().filter(i->i%2!=0).forEach(System.out::println));
 		System.out.println("collectors.tolist : "+listOdd);
 		System.out.println("tolist : "+listOdd1);

@@ -23,6 +23,17 @@ public class DATEAPICHNAGES {
 		System.out.println(local);
 	boolean value=local.parse("2020-03-20").isLeapYear();
 System.out.println(value);
+
+
+enum Mood {
+HAPPY("happy"), SAD("sad");
+private final String description;
+
+ Mood(String description) {
+this.description = description;
+ System.out.println("Hello"+description);
+}
+}
 	}
 
 }

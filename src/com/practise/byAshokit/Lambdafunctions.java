@@ -1,4 +1,4 @@
-package com.practise;
+package com.practise.byAshokit;
 
 public class Lambdafunctions {
 
